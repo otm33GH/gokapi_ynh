@@ -9,7 +9,7 @@ source /usr/share/yunohost/helpers
 
 encryption_level=5
 ynh_app_setting_set --key=encryption_level --value=$encryption_level
-cipher=$(ynh_string_random -l 40)
+cipher=$(python3 -c "import os, base64; print(base64.b64encode(os.urandom(32)).decode())")
 ynh_app_setting_set --key=cipher --value=$cipher
 
 #=================================================
