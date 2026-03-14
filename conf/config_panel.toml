@@ -1,0 +1,20 @@
+version = "1.0"
+
+[main]
+name.en = "Configuration panel"
+name.fr = "Panneau de configuration"
+services = ["__APP__"]
+
+
+[main.instance]
+name.en = "Global settings"
+name.fr = "Paramètres Globaux"
+
+[main.instance.encryption]
+    type = "select"
+    ask.en = "Encryption level ?"
+    ask.fr = "Niveau de cryptage ?"
+    help = "0 = No encryption, 1 = local files encryption, 5 = E2E encryption") 
+    choices = ["0", "1", "5"]
+    bind = "Encryption>Level:__INSTALL_DIR__/config.json"
+
