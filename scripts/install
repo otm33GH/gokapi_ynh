@@ -9,7 +9,7 @@ source /usr/share/yunohost/helpers
 
 encryption_level=5
 ynh_app_setting_set --key=encryption_level --value=$encryption_level
-cipher=$(ynh_string_random -l 32)
+cipher=$(ynh_string_random -l 40)
 ynh_app_setting_set --key=cipher --value=$cipher
 
 #=================================================
