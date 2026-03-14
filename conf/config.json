@@ -24,10 +24,9 @@
   "MaxFileSizeMB": 102400,
   "MaxMemory": 50,
   "ChunkSize": 45,
-  "HotlinkVideos": true,
   "MaxParallelUploads": 4,
   "Encryption": {
-    "Level": 5,
+    "Level": 2,
     "Cipher": null,
     "Salt": "",
     "Checksum": "",
