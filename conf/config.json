@@ -26,8 +26,8 @@
   "ChunkSize": 45,
   "MaxParallelUploads": 4,
   "Encryption": {
-    "Level": 1,
-    "Cipher": null,
+    "Level": "__ENCRYPTION_LEVEL__",
+    "Cipher": "__CIPHER__",
     "Salt": "",
     "Checksum": "",
     "ChecksumSalt": ""
